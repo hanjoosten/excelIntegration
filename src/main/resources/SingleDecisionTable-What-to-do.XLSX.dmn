@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="xls2dmn_6f2b4267-2c18-486f-afba-0a5d5c032898" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="dmnid_SingleDecisionTable-What-to-do.XLSX" name="SingleDecisionTable-What-to-do.XLSX" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="xls2dmn_6f2b4267-2c18-486f-afba-0a5d5c032898" exporter="kie-dmn-xls2dmn">
+  <dmn:inputData id="id_do_32I_32have_32to_32go_32somewhere_63" name="do I have to go somewhere?">
+    <dmn:variable id="idvar_do_32I_32have_32to_32go_32somewhere_63" name="do I have to go somewhere?" typeRef="Any"></dmn:variable>
+  </dmn:inputData>
+  <dmn:inputData id="id_Where_32are_32you" name="Where are you">
+    <dmn:variable id="idvar_Where_32are_32you" name="Where are you" typeRef="Any"></dmn:variable>
+  </dmn:inputData>
+  <dmn:decision id="d_What__to__do" name="What_to_do">
+    <dmn:variable id="dvar_What__to__do" name="What_to_do" typeRef="Any"></dmn:variable>
+    <dmn:informationRequirement>
+      <dmn:requiredInput href="#id_do_32I_32have_32to_32go_32somewhere_63"></dmn:requiredInput>
+    </dmn:informationRequirement>
+    <dmn:informationRequirement>
+      <dmn:requiredInput href="#id_Where_32are_32you"></dmn:requiredInput>
+    </dmn:informationRequirement>
+    <dmn:decisionTable id="ddt_What__to__do" hitPolicy="ANY" preferredOrientation="Rule-as-Row" outputLabel="What_to_do">
+      <dmn:input label="do I have to go somewhere?">
+        <dmn:inputExpression>
+          <dmn:text>do I have to go somewhere?</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input label="Where are you">
+        <dmn:inputExpression>
+          <dmn:text>Where are you</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output></dmn:output>
+      <dmn:rule>
+        <dmn:inputEntry>
+          <dmn:text>false</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry>
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry>
+          <dmn:text>"Nothing"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule>
+        <dmn:inputEntry>
+          <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry>
+          <dmn:text>"Venice"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry>
+          <dmn:text>"Go by boat"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule>
+        <dmn:inputEntry>
+          <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry>
+          <dmn:text>"Rome"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry>
+          <dmn:text>"Go by underground"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule>
+        <dmn:inputEntry>
+          <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry>
+          <dmn:text>"Sicily"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry>
+          <dmn:text>"Ask the Boss"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
+  </dmn:decision>
+</dmn:definitions>
