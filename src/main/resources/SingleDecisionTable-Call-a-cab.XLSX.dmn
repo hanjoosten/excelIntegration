@@ -1,64 +1,122 @@
-<?xml version="1.0" ?>
-<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="xls2dmn_42690aba-cc6e-4f62-99e4-e1c7cc8b709d" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="dmnid_SingleDecisionTable-Call-a-cab.XLSX" name="SingleDecisionTable-Call-a-cab.XLSX" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="xls2dmn_42690aba-cc6e-4f62-99e4-e1c7cc8b709d" exporter="kie-dmn-xls2dmn">
+<?xml version="1.0" encoding="UTF-8"?>
+<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="xls2dmn_42690aba-cc6e-4f62-99e4-e1c7cc8b709d" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" id="dmnid_SingleDecisionTable-Call-a-cab.XLSX" name="SingleDecisionTable-Call-a-cab.XLSX" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="xls2dmn_42690aba-cc6e-4f62-99e4-e1c7cc8b709d">
+  <dmn:extensionElements/>
   <dmn:inputData id="id_suspention_46Should_32the_32driver_32be_32suspended_63" name="suspention.Should the driver be suspended?">
-    <dmn:variable id="idvar_suspention_46Should_32the_32driver_32be_32suspended_63" name="suspention.Should the driver be suspended?" typeRef="Any"></dmn:variable>
+    <dmn:extensionElements/>
+    <dmn:variable id="idvar_suspention_46Should_32the_32driver_32be_32suspended_63" name="suspention.Should the driver be suspended?" typeRef="Any"/>
   </dmn:inputData>
   <dmn:inputData id="id_do_32I_32have_32to_32go_32somewhere_63" name="do I have to go somewhere?">
-    <dmn:variable id="idvar_do_32I_32have_32to_32go_32somewhere_63" name="do I have to go somewhere?" typeRef="Any"></dmn:variable>
+    <dmn:extensionElements/>
+    <dmn:variable id="idvar_do_32I_32have_32to_32go_32somewhere_63" name="do I have to go somewhere?" typeRef="Any"/>
   </dmn:inputData>
   <dmn:decision id="d_Call__a__cab" name="Call_a_cab">
-    <dmn:variable id="dvar_Call__a__cab" name="Call_a_cab" typeRef="Any"></dmn:variable>
-    <dmn:informationRequirement>
-      <dmn:requiredInput href="#id_suspention_46Should_32the_32driver_32be_32suspended_63"></dmn:requiredInput>
+    <dmn:extensionElements/>
+    <dmn:variable id="dvar_Call__a__cab" name="Call_a_cab" typeRef="Any"/>
+    <dmn:informationRequirement id="_D220E985-9114-4BB5-A280-F5826429A0EB">
+      <dmn:requiredInput href="#id_suspention_46Should_32the_32driver_32be_32suspended_63"/>
     </dmn:informationRequirement>
-    <dmn:informationRequirement>
-      <dmn:requiredInput href="#id_do_32I_32have_32to_32go_32somewhere_63"></dmn:requiredInput>
+    <dmn:informationRequirement id="_548DAC3F-1E6F-4101-B39F-07A03E020B2E">
+      <dmn:requiredInput href="#id_do_32I_32have_32to_32go_32somewhere_63"/>
     </dmn:informationRequirement>
     <dmn:decisionTable id="ddt_Call__a__cab" hitPolicy="ANY" preferredOrientation="Rule-as-Row" outputLabel="Call_a_cab">
-      <dmn:input label="suspention.Should the driver be suspended?">
-        <dmn:inputExpression>
+      <dmn:input id="_A4DC5EFB-70A2-42F1-8BE7-C3160FE3266E">
+        <dmn:inputExpression id="_94E6963D-DEB1-43BE-948A-1BDC8084A84E">
           <dmn:text>suspention.Should the driver be suspended?</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:input label="do I have to go somewhere?">
-        <dmn:inputExpression>
+      <dmn:input id="_1DAE7716-5F15-4979-9BDD-69357F4C48C5">
+        <dmn:inputExpression id="_AFAD54B7-FCC1-429F-BE9F-FA599BBF4B27">
           <dmn:text>do I have to go somewhere?</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:output></dmn:output>
-      <dmn:rule>
-        <dmn:inputEntry>
+      <dmn:output id="_88381F33-C5BA-4EA5-BC90-AC2A452D2D42"/>
+      <dmn:annotation name=""/>
+      <dmn:rule id="_AB1B7F66-689A-4B0E-9B2F-F355EEAFF645">
+        <dmn:inputEntry id="_18202BF9-BD91-4539-8464-C9711C21831B">
           <dmn:text>false</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry>
+        <dmn:inputEntry id="_5ADAED2B-7B29-4286-AC66-D836320BA533">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry>
+        <dmn:outputEntry id="_380219FA-1ACE-42F4-A774-6AD9BCCB45DC">
           <dmn:text>false</dmn:text>
         </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
       </dmn:rule>
-      <dmn:rule>
-        <dmn:inputEntry>
+      <dmn:rule id="_C1CD5B12-CA65-43A0-8460-1F275241B0C3">
+        <dmn:inputEntry id="_0C2D4722-BEBB-4F47-A88C-6EEE2CE83870">
           <dmn:text>true</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry>
+        <dmn:inputEntry id="_04C02B1A-0FF1-46DF-B16D-CF423B37ABF3">
           <dmn:text>false</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry>
+        <dmn:outputEntry id="_0EA7F84B-FDE5-4BC5-9966-570F5254CA0D">
           <dmn:text>false</dmn:text>
         </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
       </dmn:rule>
-      <dmn:rule>
-        <dmn:inputEntry>
+      <dmn:rule id="_D073FE9C-23C3-4F10-9103-294E83956E0F">
+        <dmn:inputEntry id="_8D06CAF4-CFBC-4C9A-8A84-3FE306895212">
           <dmn:text>true</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry>
+        <dmn:inputEntry id="_3BD7B337-F105-4477-BB24-3EF9CB738166">
           <dmn:text>true</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry>
+        <dmn:outputEntry id="_5C549B31-4D25-4A3B-A05B-0415E0670F3F">
           <dmn:text>true</dmn:text>
         </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
       </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="_601BD1B4-8936-4204-A46B-12F089339071" name="DRG">
+      <di:extension>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="ddt_Call__a__cab"/>
+        </kie:ComponentsWidthsExtension>
+      </di:extension>
+      <dmndi:DMNShape id="dmnshape-drg-id_suspention_46Should_32the_32driver_32be_32suspended_63" dmnElementRef="id_suspention_46Should_32the_32driver_32be_32suspended_63" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="50" y="225" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-drg-id_do_32I_32have_32to_32go_32somewhere_63" dmnElementRef="id_do_32I_32have_32to_32go_32somewhere_63" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="225" y="225" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-drg-d_Call__a__cab" dmnElementRef="d_Call__a__cab" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="137" y="50" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="dmnedge-drg-_D220E985-9114-4BB5-A280-F5826429A0EB" dmnElementRef="_D220E985-9114-4BB5-A280-F5826429A0EB">
+        <di:waypoint x="100" y="250"/>
+        <di:waypoint x="187" y="75"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_548DAC3F-1E6F-4101-B39F-07A03E020B2E" dmnElementRef="_548DAC3F-1E6F-4101-B39F-07A03E020B2E">
+        <di:waypoint x="275" y="250"/>
+        <di:waypoint x="187" y="75"/>
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
 </dmn:definitions>

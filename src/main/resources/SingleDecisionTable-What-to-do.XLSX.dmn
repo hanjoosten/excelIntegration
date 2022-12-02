@@ -1,75 +1,136 @@
-<?xml version="1.0" ?>
-<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="xls2dmn_6f2b4267-2c18-486f-afba-0a5d5c032898" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="dmnid_SingleDecisionTable-What-to-do.XLSX" name="SingleDecisionTable-What-to-do.XLSX" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="xls2dmn_6f2b4267-2c18-486f-afba-0a5d5c032898" exporter="kie-dmn-xls2dmn">
+<?xml version="1.0" encoding="UTF-8"?>
+<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="xls2dmn_6f2b4267-2c18-486f-afba-0a5d5c032898" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" id="dmnid_SingleDecisionTable-What-to-do.XLSX" name="SingleDecisionTable-What-to-do.XLSX" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="xls2dmn_6f2b4267-2c18-486f-afba-0a5d5c032898">
+  <dmn:extensionElements/>
   <dmn:inputData id="id_do_32I_32have_32to_32go_32somewhere_63" name="do I have to go somewhere?">
-    <dmn:variable id="idvar_do_32I_32have_32to_32go_32somewhere_63" name="do I have to go somewhere?" typeRef="Any"></dmn:variable>
+    <dmn:extensionElements/>
+    <dmn:variable id="idvar_do_32I_32have_32to_32go_32somewhere_63" name="do I have to go somewhere?" typeRef="Any"/>
   </dmn:inputData>
   <dmn:inputData id="id_Where_32are_32you" name="Where are you">
-    <dmn:variable id="idvar_Where_32are_32you" name="Where are you" typeRef="Any"></dmn:variable>
+    <dmn:extensionElements/>
+    <dmn:variable id="idvar_Where_32are_32you" name="Where are you" typeRef="Any"/>
   </dmn:inputData>
   <dmn:decision id="d_What__to__do" name="What_to_do">
-    <dmn:variable id="dvar_What__to__do" name="What_to_do" typeRef="Any"></dmn:variable>
-    <dmn:informationRequirement>
-      <dmn:requiredInput href="#id_do_32I_32have_32to_32go_32somewhere_63"></dmn:requiredInput>
+    <dmn:extensionElements/>
+    <dmn:variable id="dvar_What__to__do" name="What_to_do" typeRef="Any"/>
+    <dmn:informationRequirement id="_A21F834F-2C98-485C-A424-C4A0E295419B">
+      <dmn:requiredInput href="#id_do_32I_32have_32to_32go_32somewhere_63"/>
     </dmn:informationRequirement>
-    <dmn:informationRequirement>
-      <dmn:requiredInput href="#id_Where_32are_32you"></dmn:requiredInput>
+    <dmn:informationRequirement id="_5BB826B4-B3F1-4058-91EC-13458A2335E7">
+      <dmn:requiredInput href="#id_Where_32are_32you"/>
     </dmn:informationRequirement>
     <dmn:decisionTable id="ddt_What__to__do" hitPolicy="ANY" preferredOrientation="Rule-as-Row" outputLabel="What_to_do">
-      <dmn:input label="do I have to go somewhere?">
-        <dmn:inputExpression>
+      <dmn:input id="_819778EC-4696-487F-9716-88FF71449BD8">
+        <dmn:inputExpression id="_2F8C7099-613C-440E-9CD3-DD47467D213E">
           <dmn:text>do I have to go somewhere?</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:input label="Where are you">
-        <dmn:inputExpression>
+      <dmn:input id="_836ECE91-190B-44B5-A4A0-008C8C319EC7">
+        <dmn:inputExpression id="_3D425767-22FD-410F-91F6-75F64D5A5F81">
           <dmn:text>Where are you</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:output></dmn:output>
-      <dmn:rule>
-        <dmn:inputEntry>
+      <dmn:output id="_F21C42C8-3F0F-47B7-BAD1-B01B70BD19B0"/>
+      <dmn:annotation name=""/>
+      <dmn:rule id="_40FE9ADE-D55B-4C1E-AC66-405E9F6ECEA7">
+        <dmn:inputEntry id="_029BFF30-CD83-446A-8419-FD6999D2A8F1">
           <dmn:text>false</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry>
+        <dmn:inputEntry id="_EB39B9F7-FFB5-4C75-B5A6-53D68F14CAB1">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry>
+        <dmn:outputEntry id="_EECACDFA-6CB8-43C3-B59B-82EBD1738281">
           <dmn:text>"Nothing"</dmn:text>
         </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
       </dmn:rule>
-      <dmn:rule>
-        <dmn:inputEntry>
+      <dmn:rule id="_972862EC-2AF1-4161-9C9E-E843ACC25E7D">
+        <dmn:inputEntry id="_74C56F5A-480B-40CA-873A-DD7C7B9FB343">
           <dmn:text>true</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry>
+        <dmn:inputEntry id="_44931C74-3B18-4D27-8790-8A8BF932E9F3">
           <dmn:text>"Venice"</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry>
+        <dmn:outputEntry id="_2D42300A-07AD-4051-A266-90993A4F1031">
           <dmn:text>"Go by boat"</dmn:text>
         </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
       </dmn:rule>
-      <dmn:rule>
-        <dmn:inputEntry>
+      <dmn:rule id="_3B77CC5D-4B46-4781-A449-47E7FFC1595C">
+        <dmn:inputEntry id="_74EED857-1F29-433C-859C-66EE020828F3">
           <dmn:text>true</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry>
+        <dmn:inputEntry id="_0BA482F6-A075-4C20-894D-3D953BA2CF22">
           <dmn:text>"Rome"</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry>
+        <dmn:outputEntry id="_3A573B57-8A29-4724-8708-72E12E3F4E9F">
           <dmn:text>"Go by underground"</dmn:text>
         </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
       </dmn:rule>
-      <dmn:rule>
-        <dmn:inputEntry>
+      <dmn:rule id="_901BB86E-5C50-4B30-B2CD-AB08ACF7A731">
+        <dmn:inputEntry id="_3EF51E30-DF27-442D-8F63-1EC7F623A9D8">
           <dmn:text>true</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry>
+        <dmn:inputEntry id="_8F059297-99AB-4D4D-BDA6-BC36DB62AF7C">
           <dmn:text>"Sicily"</dmn:text>
         </dmn:inputEntry>
-        <dmn:outputEntry>
+        <dmn:outputEntry id="_010227A5-586C-4450-A47F-C3141E43945E">
           <dmn:text>"Ask the Boss"</dmn:text>
         </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
       </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="_2316EFF6-D05C-4453-990C-D28E75AD560E" name="DRG">
+      <di:extension>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="ddt_What__to__do"/>
+        </kie:ComponentsWidthsExtension>
+      </di:extension>
+      <dmndi:DMNShape id="dmnshape-drg-id_do_32I_32have_32to_32go_32somewhere_63" dmnElementRef="id_do_32I_32have_32to_32go_32somewhere_63" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="50" y="225" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-drg-id_Where_32are_32you" dmnElementRef="id_Where_32are_32you" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="225" y="225" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-drg-d_What__to__do" dmnElementRef="d_What__to__do" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="137" y="50" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="dmnedge-drg-_A21F834F-2C98-485C-A424-C4A0E295419B" dmnElementRef="_A21F834F-2C98-485C-A424-C4A0E295419B">
+        <di:waypoint x="100" y="250"/>
+        <di:waypoint x="187" y="75"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_5BB826B4-B3F1-4058-91EC-13458A2335E7" dmnElementRef="_5BB826B4-B3F1-4058-91EC-13458A2335E7">
+        <di:waypoint x="275" y="250"/>
+        <di:waypoint x="187" y="75"/>
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
 </dmn:definitions>
