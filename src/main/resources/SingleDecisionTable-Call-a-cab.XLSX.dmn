@@ -11,7 +11,7 @@
   </dmn:inputData>
   <dmn:decision id="d_Call__a__cab" name="Call_a_cab">
     <dmn:extensionElements/>
-    <dmn:variable id="dvar_Call__a__cab" name="Call_a_cab" typeRef="Any"/>
+    <dmn:variable id="dvar_Call__a__cab" name="Call_a_cab" typeRef="boolean"/>
     <dmn:informationRequirement id="_D220E985-9114-4BB5-A280-F5826429A0EB">
       <dmn:requiredInput href="#id_suspention_46Should_32the_32driver_32be_32suspended_63"/>
     </dmn:informationRequirement>
@@ -20,12 +20,12 @@
     </dmn:informationRequirement>
     <dmn:decisionTable id="ddt_Call__a__cab" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row" outputLabel="Call_a_cab">
       <dmn:input id="_A4DC5EFB-70A2-42F1-8BE7-C3160FE3266E">
-        <dmn:inputExpression id="_94E6963D-DEB1-43BE-948A-1BDC8084A84E">
+        <dmn:inputExpression id="_94E6963D-DEB1-43BE-948A-1BDC8084A84E" typeRef="boolean">
           <dmn:text>suspention.Should the driver be suspended?</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_1DAE7716-5F15-4979-9BDD-69357F4C48C5">
-        <dmn:inputExpression id="_AFAD54B7-FCC1-429F-BE9F-FA599BBF4B27">
+        <dmn:inputExpression id="_AFAD54B7-FCC1-429F-BE9F-FA599BBF4B27" typeRef="boolean">
           <dmn:text>do I have to go somewhere?</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
@@ -81,8 +81,8 @@
         <kie:ComponentsWidthsExtension>
           <kie:ComponentWidths dmnElementRef="ddt_Call__a__cab">
             <kie:width>50</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
+            <kie:width>301</kie:width>
+            <kie:width>246</kie:width>
             <kie:width>100</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>

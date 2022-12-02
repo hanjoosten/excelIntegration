@@ -20,12 +20,12 @@
     </dmn:informationRequirement>
     <dmn:decisionTable id="ddt_What__to__do" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row" outputLabel="What_to_do">
       <dmn:input id="_819778EC-4696-487F-9716-88FF71449BD8">
-        <dmn:inputExpression id="_2F8C7099-613C-440E-9CD3-DD47467D213E">
+        <dmn:inputExpression id="_2F8C7099-613C-440E-9CD3-DD47467D213E" typeRef="boolean">
           <dmn:text>do I have to go somewhere?</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_836ECE91-190B-44B5-A4A0-008C8C319EC7">
-        <dmn:inputExpression id="_3D425767-22FD-410F-91F6-75F64D5A5F81">
+        <dmn:inputExpression id="_3D425767-22FD-410F-91F6-75F64D5A5F81" typeRef="boolean">
           <dmn:text>Where are you</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
@@ -95,9 +95,9 @@
         <kie:ComponentsWidthsExtension>
           <kie:ComponentWidths dmnElementRef="ddt_What__to__do">
             <kie:width>50</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
-            <kie:width>100</kie:width>
+            <kie:width>200</kie:width>
+            <kie:width>155</kie:width>
+            <kie:width>194</kie:width>
             <kie:width>100</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
