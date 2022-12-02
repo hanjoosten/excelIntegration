@@ -18,7 +18,7 @@
     <dmn:informationRequirement id="_5BB826B4-B3F1-4058-91EC-13458A2335E7">
       <dmn:requiredInput href="#id_Where_32are_32you"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="ddt_What__to__do" hitPolicy="ANY" preferredOrientation="Rule-as-Row" outputLabel="What_to_do">
+    <dmn:decisionTable id="ddt_What__to__do" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row" outputLabel="What_to_do">
       <dmn:input id="_819778EC-4696-487F-9716-88FF71449BD8">
         <dmn:inputExpression id="_2F8C7099-613C-440E-9CD3-DD47467D213E">
           <dmn:text>do I have to go somewhere?</dmn:text>
@@ -93,7 +93,13 @@
     <dmndi:DMNDiagram id="_2316EFF6-D05C-4453-990C-D28E75AD560E" name="DRG">
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="ddt_What__to__do"/>
+          <kie:ComponentWidths dmnElementRef="ddt_What__to__do">
+            <kie:width>50</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+          </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-drg-id_do_32I_32have_32to_32go_32somewhere_63" dmnElementRef="id_do_32I_32have_32to_32go_32somewhere_63" isCollapsed="false">

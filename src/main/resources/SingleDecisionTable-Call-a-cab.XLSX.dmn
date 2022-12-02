@@ -18,7 +18,7 @@
     <dmn:informationRequirement id="_548DAC3F-1E6F-4101-B39F-07A03E020B2E">
       <dmn:requiredInput href="#id_do_32I_32have_32to_32go_32somewhere_63"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="ddt_Call__a__cab" hitPolicy="ANY" preferredOrientation="Rule-as-Row" outputLabel="Call_a_cab">
+    <dmn:decisionTable id="ddt_Call__a__cab" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row" outputLabel="Call_a_cab">
       <dmn:input id="_A4DC5EFB-70A2-42F1-8BE7-C3160FE3266E">
         <dmn:inputExpression id="_94E6963D-DEB1-43BE-948A-1BDC8084A84E">
           <dmn:text>suspention.Should the driver be suspended?</dmn:text>
@@ -79,7 +79,13 @@
     <dmndi:DMNDiagram id="_601BD1B4-8936-4204-A46B-12F089339071" name="DRG">
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="ddt_Call__a__cab"/>
+          <kie:ComponentWidths dmnElementRef="ddt_Call__a__cab">
+            <kie:width>50</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+          </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-drg-id_suspention_46Should_32the_32driver_32be_32suspended_63" dmnElementRef="id_suspention_46Should_32the_32driver_32be_32suspended_63" isCollapsed="false">
